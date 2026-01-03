@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "name": "📂 File & Directory",
+      "commands": [
+        {"cmd": "ls", "desc": "List files", "example": "ls -la"},
+        {"cmd": "cd", "desc": "Change directory", "example": "cd /home"},
+        {"cmd": "pwd", "desc": "Print working directory", "example": "pwd"},
+        {"cmd": "mkdir", "desc": "Create directory", "example": "mkdir newfolder"},
+        {"cmd": "rmdir", "desc": "Remove empty directory", "example": "rmdir folder"},
+        {"cmd": "rm", "desc": "Remove files/dirs", "example": "rm -rf folder"},
+        {"cmd": "cp", "desc": "Copy files", "example": "cp file.txt backup.txt"},
+        {"cmd": "mv", "desc": "Move/rename", "example": "mv old.txt new.txt"},
+        {"cmd": "touch", "desc": "Create empty file", "example": "touch file.txt"},
+        {"cmd": "find", "desc": "Search files", "example": "find . -name '*.txt'"}
+      ]
+    },
+    {
+      "name": "📝 Text & File Viewing",
+      "commands": [
+        {"cmd": "cat", "desc": "Display file", "example": "cat file.txt"},
+        {"cmd": "less", "desc": "View file (paginated)", "example": "less file.txt"},
+        {"cmd": "head", "desc": "Show first lines", "example": "head -n 10 file.txt"},
+        {"cmd": "tail", "desc": "Show last lines", "example": "tail -f /var/log/syslog"},
+        {"cmd": "grep", "desc": "Search text", "example": "grep 'error' log.txt"},
+        {"cmd": "wc", "desc": "Word/line count", "example": "wc -l file.txt"},
+        {"cmd": "sort", "desc": "Sort lines", "example": "sort file.txt"},
+        {"cmd": "uniq", "desc": "Remove duplicates", "example": "sort file.txt | uniq"}
+      ]
+    },
+    {
+      "name": "👤 Users & Permissions",
+      "commands": [
+        {"cmd": "chmod", "desc": "Change permissions", "example": "chmod 755 script.sh"},
+        {"cmd": "chown", "desc": "Change owner", "example": "chown user:group file.txt"},
+        {"cmd": "sudo", "desc": "Run as superuser", "example": "sudo apt update"},
+        {"cmd": "whoami", "desc": "Current username", "example": "whoami"},
+        {"cmd": "id", "desc": "User ID info", "example": "id"},
+        {"cmd": "passwd", "desc": "Change password", "example": "passwd"}
+      ]
+    },
+    {
+      "name": "⚡ Process Management",
+      "commands": [
+        {"cmd": "ps", "desc": "List processes", "example": "ps aux"},
+        {"cmd": "top", "desc": "Process monitor", "example": "top"},
+        {"cmd": "htop", "desc": "Better top", "example": "htop"},
+        {"cmd": "kill", "desc": "Kill process", "example": "kill -9 1234"},
+        {"cmd": "killall", "desc": "Kill by name", "example": "killall firefox"},
+        {"cmd": "jobs", "desc": "Background jobs", "example": "jobs"},
+        {"cmd": "fg", "desc": "Foreground job", "example": "fg %1"},
+        {"cmd": "bg", "desc": "Background job", "example": "bg %1"}
+      ]
+    },
+    {
+      "name": "🌐 Networking",
+      "commands": [
+        {"cmd": "ip", "desc": "Network config", "example": "ip addr show"},
+        {"cmd": "ping", "desc": "Test connectivity", "example": "ping google.com"},
+        {"cmd": "wget", "desc": "Download file", "example": "wget https://example.com/file.zip"},
+        {"cmd": "curl", "desc": "Transfer data", "example": "curl https://api.example.com"},
+        {"cmd": "ssh", "desc": "Remote login", "example": "ssh user@host"},
+        {"cmd": "scp", "desc": "Secure copy", "example": "scp file.txt user@host:/path/"},
+        {"cmd": "netstat", "desc": "Network stats", "example": "netstat -tuln"},
+        {"cmd": "ss", "desc": "Socket stats", "example": "ss -tuln"}
+      ]
+    },
+    {
+      "name": "📦 Package Management",
+      "commands": [
+        {"cmd": "apt update", "desc": "Update package list", "example": "sudo apt update"},
+        {"cmd": "apt install", "desc": "Install package", "example": "sudo apt install nginx"},
+        {"cmd": "apt remove", "desc": "Remove package", "example": "sudo apt remove nginx"},
+        {"cmd": "apt search", "desc": "Search packages", "example": "apt search python"},
+        {"cmd": "yum install", "desc": "Install (RHEL)", "example": "sudo yum install httpd"},
+        {"cmd": "dnf install", "desc": "Install (Fedora)", "example": "sudo dnf install nginx"}
+      ]
+    },
+    {
+      "name": "💾 Disk & System",
+      "commands": [
+        {"cmd": "df", "desc": "Disk free space", "example": "df -h"},
+        {"cmd": "du", "desc": "Disk usage", "example": "du -sh *"},
+        {"cmd": "free", "desc": "Memory usage", "example": "free -h"},
+        {"cmd": "uptime", "desc": "System uptime", "example": "uptime"},
+        {"cmd": "uname", "desc": "System info", "example": "uname -a"},
+        {"cmd": "lscpu", "desc": "CPU info", "example": "lscpu"}
+      ]
+    },
+    {
+      "name": "🔧 System Control",
+      "commands": [
+        {"cmd": "systemctl", "desc": "Service control", "example": "sudo systemctl start nginx"},
+        {"cmd": "service", "desc": "Service mgmt", "example": "sudo service nginx restart"},
+        {"cmd": "shutdown", "desc": "Shutdown system", "example": "sudo shutdown -h now"},
+        {"cmd": "reboot", "desc": "Reboot system", "example": "sudo reboot"}
+      ]
+    }
+  ]
+}
